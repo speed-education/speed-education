@@ -1,1 +1,38 @@
-https://phobicshoe7.wixsite.com/my-site-4/classes
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Test Layout</title>
+        <style type="text/css">
+            body, html {
+                margin: 0; 
+                padding: 0; 
+                height: 100%; 
+                overflow: hidden; /* Hides scroll bars */
+            }
+            .white-box {
+                width: 100%; /* Covers the full width of the screen */
+                height: 50px; /* Adjust the height as needed */
+                background-color: white; /* White background */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+                z-index: 1000; /* Ensures it appears above the iframe */
+            }
+            iframe {
+                position: fixed; /* Fixes the iframe at the top of the screen */
+                top: -50px; /* Starts below the white box */
+                width: 100%;
+                height: calc(100% + 50px); /* Ensures iframe fills the screen below the white box */
+                border: none; /* Removes default iframe border */
+          }
+        </style>
+        <script>
+            // Automatically scroll to the bottom of the page on load
+            window.onload = function() {
+                window.scrollTo(0, document.body.scrollHeight);
+            };
+        </script>
+    </head>
+    <body>
+        <!--<div class="white-box"></div>-->
+        <iframe src="https://phobicshoe7.wixsite.com/my-site-4/classes"></iframe>
+    </body>
+</html>
